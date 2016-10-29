@@ -3,7 +3,7 @@
 * @Date:   10-20-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-20-2016
+* @Last modified time: 10-29-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -21,7 +21,7 @@ var DirectoryCommand = function(name) {
       throw new Error('nice mkdir Name');
     }
 
-    console.log("Raiding your ship");
+    console.log("Chilling your project");
 
     var src = path.join(__dirname, '..', '..', 'project', 'component');
     var dest = path.join(workDir, 'client', 'app', name);
@@ -33,7 +33,7 @@ var DirectoryCommand = function(name) {
        if (err) {
          return console.error(err);
        }
-       console.log('Looting up your gold ...');
+       console.log('Tasting sweet ...');
 
        fs.rename(file, newFile);
 
@@ -49,7 +49,7 @@ var DirectoryCommand = function(name) {
         });
       });
 
-       console.log("Your gold is ready to go!");
+       console.log("Life's pretty sweet!");
     });
 
   };

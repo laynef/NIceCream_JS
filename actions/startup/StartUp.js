@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-20-2016
+* @Last modified time: 10-29-2016
 */
 
 var TextCommand = require('../commands/TextCommand.js');
@@ -20,7 +20,7 @@ var StartUp = function(commandPattern, args, flags) {
 
   var execute = function() {
     switch (commandPattern) {
-      case 'arr':
+      case 'day':
         commanderInCharge(TextCommand);
         break;
       case 'create':

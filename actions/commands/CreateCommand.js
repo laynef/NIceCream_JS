@@ -21,7 +21,7 @@ var CreateCommand = function(name) {
       throw new Error('nice create Name');
     }
 
-    console.log("Raiding your project " + name);
+    console.log("Chilling your project " + name);
 
     var src = path.join(__dirname, '..', '..', 'project', 'temp');
     var dest = path.join(workDir, name);

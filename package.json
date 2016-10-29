@@ -1,9 +1,10 @@
 {
-  "name": "Nice Cream",
-  "version": "1.2.3",
-  "description": "Basic Angular 2 vanilla setup",
+  "name": "nice-cream",
+  "version": "0.0.1",
+  "description": "This is a vanilla angular 2 setup",
+  "main": "./actions/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nice-cream"
   },
   "repository": {
     "type": "git",
@@ -13,11 +14,6 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/laynefaler/NIceCream_JS/issues"
-  },
-  "homepage": "https://github.com/laynefaler/NIceCream_JS#readme",
-  "preferGlobal": true,
-  "bin": {
-    "nice": "./actions/index.js"
   },
   "dependencies": {
     "angular2": "^2.0.0-beta.17",
@@ -30,5 +26,6 @@
     "reflect-metadata": "^0.1.8",
     "rxjs": "^5.0.0-rc.1",
     "zone.js": "^0.6.26"
-  }
+  },
+  "homepage": "https://github.com/laynefaler/NIceCream_JS#readme"
 }

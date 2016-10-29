@@ -3,22 +3,15 @@
 @Date:   10-10-2016
 @Email:  laynefaler@gmail.com
 @Last modified by:   laynefaler
-@Last modified time: 10-20-2016
+@Last modified time: 10-29-2016
 -->
 
 # README
-
-    _______________  ___ _____  ______ _           _       
-    | ___ \ ___ \  \/  |/  ___| | ___ (_)         | |      
-    | |_/ / |_/ / .  . |\ `--.  | |_/ /_ _ __ __ _| |_ ___
-    | ___ \    /| |\/| | `--. \ |  __/| | '__/ _` | __/ _ \
-    | |_/ / |\ \| |  | |/\__/ / | |   | | | | (_| | ||  __/
-    \____/\_| \_\_|  |_/\____/  \_|   |_|_|  \__,_|\__\___|
-
+# Under Construction
 
 ## Installation
 
-`npm install -g brms-nice` <br/>
+`npm install -g nice-cream` <br/>
 `nice arr`<br/>
 `nice create <project-name>`<br/>
 `cd <project-name>`<br/>

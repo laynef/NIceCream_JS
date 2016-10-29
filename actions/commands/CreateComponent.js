@@ -21,7 +21,7 @@ var ComponentCommand = function(name) {
       throw new Error('nice component Name');
     }
 
-    console.log("Raiding your ship");
+    console.log("Chilling your project");
 
     var src = path.join(__dirname, '..', '..', 'project', 'component');
     var dest = path.join(workDir, 'client', 'app', 'components', name);
@@ -33,7 +33,7 @@ var ComponentCommand = function(name) {
        if (err) {
          return console.error(err);
        }
-       console.log('Looting up your gold ...');
+       console.log('Tasting sweet ...');
 
        fs.rename(file, newFile);
 
@@ -49,7 +49,7 @@ var ComponentCommand = function(name) {
         });
       });
 
-       console.log("Your gold is ready to go!");
+       console.log("Life's pretty sweet!");
     });
 
   };
