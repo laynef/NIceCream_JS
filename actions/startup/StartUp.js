@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-29-2016
+* @Last modified time: 10-30-2016
 */
 
 var TextCommand = require('../commands/TextCommand.js');
@@ -26,12 +26,12 @@ var StartUp = function(commandPattern, args, flags) {
       case 'create':
         commanderInCharge(CreateCommand);
         break;
-      case 'make':
-        commanderInCharge(CreateComponent);
-        break;
-      case 'mkdir':
-        commanderInCharge(CreateDirectory);
-        break;
+      // case 'make':
+      //   commanderInCharge(CreateComponent);
+      //   break;
+      // case 'mkdir':
+      //   commanderInCharge(CreateDirectory);
+      //   break;
       default:
         commanderInCharge(PrintDocCommand);
     }
