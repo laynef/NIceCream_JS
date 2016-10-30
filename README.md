@@ -12,11 +12,9 @@
 ## Installation
 
 `npm install -g nice-cream` <br/>
-`nice arr`<br/>
+`nice day`<br/>
 `nice create <project-name>`<br/>
 `cd <project-name>`<br/>
-`meteor npm install` <br/>
-`meteor`<br/>
 
 ### To add a component
 
