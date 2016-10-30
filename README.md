@@ -27,7 +27,7 @@
 `cd <project-name>`<br/>
 `npm install`<br/>
 
-<!-- ### To add a component
+<!--- ### To add a component
 
 `cd <project-name>`<br/>
 `nice make <component-name>`<br/>
@@ -35,4 +35,6 @@
 ### To add a directory
 
 `cd <project-name>`<br/>
-`nice mkdir <component-name>`<br/> -->
+`nice mkdir <component-name>`<br/>
+
+--->
