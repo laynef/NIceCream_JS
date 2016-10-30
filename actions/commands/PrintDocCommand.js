@@ -15,7 +15,7 @@ var PrintDoc = function() {
     console.log('├── create             ─ Create a new project');
     // console.log('├── make               ─ Create a new component');
     // console.log('├── mkdir              ─ Create a new directory');
-    console.log('└── day                  ─ Verify that it\'s a nice day);
+    console.log('└── day                  ─ Verify that it\'s a nice day');
   };
   return {
     handle : printMe
