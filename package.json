@@ -1,6 +1,6 @@
 {
   "name": "nice-cream",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "This is a vanilla angular 2 setup",
   "main": "./actions/index.js",
   "scripts": {
