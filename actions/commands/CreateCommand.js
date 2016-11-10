@@ -3,7 +3,7 @@
 * @Date:   10-10-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-30-2016
+* @Last modified time: 11-09-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -32,28 +32,20 @@ var CreateCommand = function(name) {
       'name': ProjectName,
       "version": "0.0.0",
       "scripts": {
-        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+        "start": "tsc && concurrently \"tsc -w\" \"lite-server\" | bash ",
         "lite": "lite-server",
         "tsc": "tsc",
         "tsc:w": "tsc -w"
       },
       "dependencies": {
-        "@angular/common": "~2.1.1",
-        "@angular/compiler": "~2.1.1",
-        "@angular/core": "~2.1.1",
-        "@angular/forms": "~2.1.1",
-        "@angular/http": "~2.1.1",
-        "@angular/platform-browser": "~2.1.1",
-        "@angular/platform-browser-dynamic": "~2.1.1",
-        "@angular/router": "~3.1.1",
-        "@angular/upgrade": "~2.1.1",
-        "angular-in-memory-web-api": "~0.1.13",
-        "bootstrap": "^3.3.7",
-        "core-js": "^2.4.1",
+        "angular2": "^2.0.0-beta.17",
+        "bourbon": "^4.2.7",
+        "bourbon-bitters": "^1.2.1",
+        "bourbon-neat": "^1.8.0",
+        "es6-shim": "^0.35.1",
         "reflect-metadata": "^0.1.8",
-        "rxjs": "5.0.0-beta.12",
-        "systemjs": "0.19.39",
-        "zone.js": "^0.6.25"
+        "rxjs": "^5.0.0-rc.1",
+        "zone.js": "^0.6.26"
       },
       "devDependencies": {
         "@types/core-js": "^0.9.34",

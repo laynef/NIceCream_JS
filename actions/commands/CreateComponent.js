@@ -3,7 +3,7 @@
 * @Date:   10-19-2016
 * @Email:  laynefaler@gmail.com
 * @Last modified by:   laynefaler
-* @Last modified time: 10-29-2016
+* @Last modified time: 11-09-2016
 */
 
 var ncp = require('ncp').ncp;
@@ -12,7 +12,7 @@ var fs = require('fs');
 
 var ComponentCommand = function(name) {
 
-  var capitalName = name[0].toUpperCase() + name.slice(1).toLowerCase();
+  var stringName = name.toLowerCase();
 
   var newComponent = function() {
     var workDir = process.cwd();
@@ -25,8 +25,16 @@ var ComponentCommand = function(name) {
 
     var src = path.join(__dirname, '..', '..', 'project', 'component');
     var dest = path.join(workDir, 'client', 'app', 'components', name);
-    var file = path.join(workDir, 'client', 'app', 'components', name, 'Component.ts');
-    var newFile = path.join(workDir, 'client', 'app', 'components', name, capitalName + '.ts');
+
+    // old files
+    var tsFile = path.join(workDir, 'client', 'app', 'components', name, 'main.component.ts');
+    var scssFile = path.join(workDir, 'client', 'app', 'components', name, 'main.component.scss');
+    var htmlFile = path.join(workDir, 'client', 'app', 'components', name, 'main.component.html');
+
+    // new files
+    var newTSFile = path.join(workDir, 'client', 'app', 'components', name, stringName + '.component' + '.ts');
+    var newSCSSFile = path.join(workDir, 'client', 'app', 'components', name, stringName + '.component' + '.scss');
+    var newHTMLFile = path.join(workDir, 'client', 'app', 'components', name, stringName + '.component' + '.html');
 
     // copy project to new directory
     ncp(src, dest, function (err) {
@@ -35,14 +43,16 @@ var ComponentCommand = function(name) {
        }
        console.log('Tasting sweet ...');
 
-       fs.rename(file, newFile);
+       fs.rename(tsFile, newTSFile);
+       fs.rename(scssFile, newSCSSFile);
+       fs.rename(htmlFile, newHTMLFile);
 
        // rename Main in Component.ts
        fs.readFile(newFile, 'utf8', function (err,data) {
         if (err) {
           return console.log(err);
         }
-        var result = data.replace(/Main/g, capitalName);
+        var result = data.replace(/Main/ig, capitalName);
 
         fs.writeFile(newFile, result, 'utf8', function (err) {
            if (err) return console.log(err);
